@@ -3,85 +3,26 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Random Quote Machine</title>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<style>
-.container {
-background-color: purple;
+  <link rel="stylesheet" href="css\quote.css" />
 
-}
-::-webkit-scrollbar{
-  display: none;
-}
-.mid  {  /*
-  margin:60px;
-  margin-top: 200px;
-  width: 100px;
-
-  padding-top: 200px;
-  padding-right: 200px;
-  padding-left: 200px;
-     min-width: 250px;
-  margin-left: 400px;*/
-  margin: 15% 30% 30% 32%;
-     min-height:300px;
-     min-width: 100px;
-   background: silver;
-     border-radius: 10px;
-     text align:center;
-     font-size:large;
-}
-.buttons   {
-
-    margin-top:75%;
-    opacity:1;
-    cursor: pointer;
-
-
- display:block;
-    float: right;
-}
-@media only screen and (max-width: 425px){
-  .mid {
-    margin: 25% 30% 30% 32%;
-       min-height:200px;
-       min-width: 100px;
-  }
-  .buttons{
-        margin-top:125%;
-    float: right;
-  }
-}
-
-</style>
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js\main.js"></script>
 
 </head>
-<body  class="container" scroll="no" style="overflow: hidden">
 
-<div class="mid col-md-4">
-<div class="quote">
-Random quote;
+  <body  class="container" scroll="no" style="overflow: hidden" background="img\image2.png">
+<center><h1> Random Code Generator</h1></center>
+<div class="card">
+<div class="card-block">
+  This is some text within a card block.
 </div>
+</div>
+
 <button class="buttons" >Click</button>
-</div>
-<script>
-$(document).ready(function(){
-  $(".buttons").click(function(e){
+    </div>
 
-    $.ajax({
-      url: "https://quotesondesign.com/wp-json/posts?",
-          data: "filter[orderby]=rand&filter[posts_per_page]=1&callback=",
-          success: function(data){
-      var c=data.shift();
-      console.log(c.content);
-      $(".quote").html("<p"+c.content+"</p>");
-    }});
-  });
-});
-
-
-
-</script>
-</body>
+  </body>
 </html>
