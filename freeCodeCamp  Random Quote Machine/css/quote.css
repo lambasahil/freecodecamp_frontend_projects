@@ -22,7 +22,9 @@ h1 {
 }
 .card-block{
   margin: 15%;
-padding-top: 20%;
+  margin-top: 5%;
+padding-top: 15%;
+  z-index: 10;
 }
 .quote {
   align-content: center;
@@ -31,9 +33,25 @@ padding-top: 20%;
 font-family: 'Permanent Marker', cursive;
 
 }
+.z-index-1000{
+    z-index: 1000;
+}
+
+.slide{
+  font-size: 23px;
+/*display: none;*/
+  margin-bottom: -2px;
+
+}
 .icon{
   font-size: 50px;
 }
+.share{
+    font-size: 30px;
+    text align: right;
+    margin-right: 20px;
+}
+
 .author {
   font-size: 15px;
   text-align: right;
