@@ -39,7 +39,7 @@ font-family: 'Permanent Marker', cursive;
 
 .slide{
   font-size: 23px;
-/*display: none;*/
+display: none;
   margin-bottom: -2px;
 
 }
