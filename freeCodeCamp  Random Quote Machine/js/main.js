@@ -3,16 +3,16 @@
 $(document).ready(function(){
 
 $("#abc").click(function(){
-  
+
 $("#def").slideToggle();
 
 });
 
 
 
-  setTimeout(function(){
+  setInterval(function(){
     Randomquote()
-  },2000);
+  },8000);
 $(".quote").click(function(){
   Randomquote()
 });
