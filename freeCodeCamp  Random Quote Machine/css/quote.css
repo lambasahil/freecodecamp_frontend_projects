@@ -1,16 +1,13 @@
 h1 {
   font-family: 'Gloria Hallelujah', cursive;
   color: white;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
-.container {
-/*background-image: url("img\quote.jpg");*/
 
-}
-::-webkit-scrollbar{
+/*::-webkit-scrollbar{    --> Used for no scrolling
   display: none;
-}
+}*/
 .card  {
 
   margin: 10% 30% 10% 25%;
@@ -45,6 +42,10 @@ display: none;
 }
 .icon{
   font-size: 50px;
+}
+.cons{
+  background-color: blue;
+  height: 3.6rem;
 }
 .share{
     font-size: 30px;
