@@ -2,12 +2,17 @@ h1 {
   font-family: 'Gloria Hallelujah', cursive;
   color: white;
   margin-top: 100px;
+  font-size: 80px;
 }
 
 
 /*::-webkit-scrollbar{    --> Used for no scrolling
   display: none;
 }*/
+i
+{
+
+}
 .card  {
 
   margin: 10% 30% 10% 25%;
@@ -43,12 +48,17 @@ display: none;
 .icon{
   font-size: 50px;
 }
-.cons{
-  background-color: blue;
-  height: 3.6rem;
+i{
+  font-size: 5px;
 }
+/*.cons{
+  background-color: blue;
+   border-radius: 50%;
+   border: 1x solid grey;
+   padding:5px;
+}*/
 .share{
-    font-size: 30px;
+    font-size: 60px;
     text align: right;
     margin-right: 20px;
 }
