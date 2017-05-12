@@ -78,7 +78,18 @@ i{
   padding-bottom: 20%;
   font-family: 'Gloria Hallelujah', cursive;
 }
-@media (max-width: 991px){
+.DArrow{
+  text-align: right;
+  margin-right: 20px;
+  font-size: 40px;
+}
+.artist{
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
+  color: white;
+}
+/*@media (max-width: 991px){
   .author {
       font-size: medium;
   }
@@ -95,4 +106,4 @@ i{
         margin-top:125%;
     float: right;
   }
-}
+}*/
