@@ -12,7 +12,7 @@ $("#def").slideToggle();
 
   setInterval(function(){
     Randomquote()
-  },8000);
+  },4000);
 $(".quote").click(function(){
   Randomquote()
 });
