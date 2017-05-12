@@ -4,15 +4,14 @@ h1 {
   margin-top: 100px;
   font-size: 80px;
 }
-
+span {
+  font-size: 10px;
+}
 
 /*::-webkit-scrollbar{    --> Used for no scrolling
   display: none;
 }*/
-i
-{
 
-}
 .card  {
 
   margin: 10% 30% 10% 25%;
@@ -22,9 +21,21 @@ i
      text align:center;
      font-size:large;
 }
+.F{
+  position: absolute;
+  z-index: 2;
+  text-align: right;
+  margin-left: 20px;
+
+}
+.E{
+  position: relative;
+  z-index: 1;
+}
+
 .card-block{
-  margin: 15%;
-  margin-top: 5%;
+  margin: 25%;
+margin-top: 10%;
 padding-top: 15%;
   z-index: 10;
 }
@@ -34,9 +45,6 @@ padding-top: 15%;
   font-size: 25px;
 font-family: 'Permanent Marker', cursive;
 
-}
-.z-index-1000{
-    z-index: 1000;
 }
 
 .slide{
@@ -59,7 +67,7 @@ i{
 }*/
 .share{
     font-size: 60px;
-    text align: right;
+    text-align: right;
     margin-right: 20px;
 }
 
