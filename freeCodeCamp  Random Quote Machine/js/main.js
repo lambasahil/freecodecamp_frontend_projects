@@ -29,9 +29,7 @@ $(".quote").click(function(){
 
      $("#tshare").attr("href", "http://twitter.com/home/?status=" + c.content +
                            ' (' + c.title + ')');
-          $('#fShare').attr("href", "http://www.facebook.com/sharer/sharer.php?s=100&p[url]=" + c.link + "&p[title]=shareQuote");
-          $('#gshare').attr("href", "https://plus.google.com/share?url=" + c.link);
-          //$("#capture").removeAttr("download").removeAttr("href");
+    $('#gshare').attr("href", "https://plus.google.com/share?url=" + c.link);
 
     },
     cache: false});
