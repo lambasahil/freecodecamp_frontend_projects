@@ -20,12 +20,18 @@ $(".quote").click(function(){
 
     $.ajax({
             url: "https://quotesondesign.com/wp-json/posts?",
-          data: "filter[orderby]=rand&filter[posts_per_page]=1&callback=",
+          //data: "filter[orderby]=rand&filter[posts_per_page]=1&callback=",
           success: function(data){
       var c=data.shift();
 
       $(".quote").html(c.content  );
      $(".author").html("<p  >"+"-"+c.title+"</p>");
+
+     $("#tshare").attr("href", "http://twitter.com/home/?status=" + data.content +
+                           ' (' + data.title + ')');
+          $('#fShare').attr("href", "http://www.facebook.com/sharer/sharer.php?s=100&p[url]=" + data.link + "&p[title]=shareQuote");
+          $('#gshare').attr("href", "https://plus.google.com/share?url=" + data.link);
+          //$("#capture").removeAttr("download").removeAttr("href");
 
     },
     cache: false});

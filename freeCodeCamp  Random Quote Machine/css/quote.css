@@ -10,7 +10,9 @@ span {
 
 /*::-webkit-scrollbar{    --> Used for no scrolling
   display: none;
-}*/
+
+}
+  scroll="no" style="overflow: hidden"*/
 
 .card  {
 
@@ -46,6 +48,9 @@ padding-top: 15%;
 font-family: 'Permanent Marker', cursive;
 
 }
+a{
+  color: 	#696969;
+}
 
 .slide{
   font-size: 23px;
@@ -69,6 +74,7 @@ i{
     font-size: 60px;
     text-align: right;
     margin-right: 20px;
+    float: right;
 }
 
 .author {
