@@ -23,11 +23,12 @@ span {
      text align:center;
      font-size:large;
 }
+
 .F{
   position: absolute;
   z-index: 2;
   text-align: right;
-  margin-left: 20px;
+  margin-left: 10px;
 
 }
 .E{
@@ -52,10 +53,10 @@ a{
   color: 	#696969;
 }
 
-.slide{
+#def{
   font-size: 23px;
 display: none;
-  margin-bottom: -2px;
+margin-bottom: -2px;
 
 }
 .icon{
