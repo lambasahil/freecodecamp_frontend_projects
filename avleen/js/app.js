@@ -93,7 +93,6 @@ var viewmodel = function() {
        $.ajax({
          method: 'GET',
          dataType: "json",
-         crossDomain: true,
          url: "https://api.darksky.net/forecast/d5e3f4ed9885a4e2257a7979abc54453/" + report.id,
          success: function(data){
            var abc=data.currently;
