@@ -78,7 +78,9 @@ var viewmodel = function() {
       if(marker.smallwindow!=marker){
 
         smallwindow.marker=marker;
-        smallwindow.setContent('<div>' + '<h3>' + marker.title + '</h3>' + '</div>');
+        smallwindow.setContent('<div>' + '<h3>' + marker.title + '</h3>' + '<br>' + '<h5>'+
+                            marker.summary + '</h5>' + '<h5>' + marker.temp + '</h5>'
+                            + '<h5>' + marker.icon + '</h5>' + '</div>');
         smallwindow.open(map, marker);
         smallwindow.addListener('closeclick',function(){
           smallwindow.marker=null;
@@ -97,7 +99,7 @@ var viewmodel = function() {
          url: "https://api.darksky.net/forecast/d5e3f4ed9885a4e2257a7979abc54453/" + report.id,
          success: function(data){
            var abc=data.currently;
-           console.log(abc);
+           //console.log(abc);
            report.humidity=abc.humidity;
            report.summary=abc.summary;
            report.temp=abc.temperature;
