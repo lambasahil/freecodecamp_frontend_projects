@@ -1,0 +1,62 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Show The Local Weather</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- <script src="jss\jquery.min.js"></script> -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</head>
+
+<body onLoad="getLocation()">
+
+<center> <div  class="box1"> <div>Free Code Camp<br>Weather App</div></div></center>
+
+
+  <div>
+            <div class="box row">
+                  <div class="col-xs-4" id="place">
+
+                  </div>
+                  <div class="col-xs-4" id="temp">
+                  </div>
+                  <div class="col-xs-4" id="humidity">
+                  </div>
+
+            </div>
+
+
+
+            <div class="box">
+              <div class="col-xs-4" id="pressure">
+
+              </div>
+              <div class="col-xs-4" id="wind">
+              </div>
+              <div class="col-xs-4" id="icon">
+              </div>
+            </div>
+
+
+
+            <div class="box">
+              <div class="col-xs-12" id="summary">
+              <p class="me">
+                Made By Sahil Lamba</p>
+              </div>
+            </div>
+
+  </div>
+  <script src="jss\weather.js"></script>
+  </body>
+</html>
