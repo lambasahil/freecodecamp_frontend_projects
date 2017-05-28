@@ -13,6 +13,17 @@ function getLocation() {
 function showPosition(position) {
     array.latitude= position.coords.latitude ;
     array.longitude= position.coords.longitude;
+
+    //Reverse Geocoding
+    $.ajax({
+      method: 'GET',
+      url: "https://maps.googleapis.com/maps/api/geocode/json?latlng="+ array.latitude +"," + array.longitude +"&key=AIzaSyB2ng6KUPwi4wnLFVzXi2LuEbhYWkLhZSM",
+      success: function(data){
+          array.place=data.results[0].address_components[2].long_name;
+      }
+
+    });
+
     $.ajax({
       method: 'GET',
       dataType: "jsonp",
@@ -21,7 +32,7 @@ function showPosition(position) {
       success: function(data){
         var info=data.currently;
 
-        array.place=data.timezone;;
+
         array.humidity=info.humidity;
         array.summary=info.summary;
         array.temp=info.temperature;
@@ -52,6 +63,3 @@ function showPosition(position) {
        }
     });
 }
-$(document).ready(function(){
-
-})
