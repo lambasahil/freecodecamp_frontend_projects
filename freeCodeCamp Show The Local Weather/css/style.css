@@ -27,11 +27,12 @@ background-color: black;
 
 #place,#temp,#humidity,#pressure,#wind,#icon,#summary{
   color: white;
-  padding: 20px;
+  padding: 25px;
   /*margin: 10px;*/
   font-size: 25px;
 }
 .me {
+  color: white;
   font-size: 30px;
   text-align: right;
   margin-top: 50px;
