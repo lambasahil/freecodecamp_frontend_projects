@@ -1,0 +1,41 @@
+
+body{
+background-color: black;
+}
+
+.box1{
+  font-family: 'Barrio', cursive;
+  background-color: grey;
+  height: 80px;
+  width: 80vh;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+
+}
+
+
+.box{
+  border-radius: 10px;
+  background-color: grey;
+  margin: 40px;
+  height: 120px;
+
+}
+
+#place,#temp,#humidity,#pressure,#wind,#icon,#summary{
+  color: white;
+  padding: 25px;
+  /*margin: 10px;*/
+  font-size: 25px;
+}
+.me {
+  color: white;
+  font-size: 30px;
+  text-align: right;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  font-family: 'Gloria Hallelujah', cursive;
+}
